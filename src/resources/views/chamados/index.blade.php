@@ -11,7 +11,6 @@
     </a>
 </div>
 
-{{-- Filtros --}}
 <form method="GET" action="{{ route('chamados.index') }}" class="bg-white rounded-lg shadow p-4 mb-6 flex flex-wrap gap-4 items-end">
     <div>
         <label class="block text-sm text-gray-600 mb-1">Prioridade</label>
@@ -44,7 +43,6 @@
     <a href="{{ route('chamados.index') }}" class="text-sm text-gray-500 hover:underline py-2">Limpar</a>
 </form>
 
-{{-- Tabela --}}
 <div class="bg-white rounded-lg shadow overflow-hidden">
     <table class="w-full text-sm">
         <thead class="bg-gray-50 text-gray-600 uppercase text-xs">
@@ -93,7 +91,7 @@
                 <td class="px-4 py-3 text-gray-500">{{ $chamado->data_abertura->format('d/m/Y H:i') }}</td>
                 <td class="px-4 py-3">
                     @if($chamado->isSlaEstourado())
-                        <span class="px-2 py-1 rounded-full text-xs font-semibold bg-red-100 text-red-700">⚠ Estourado</span>
+                        <span class="px-2 py-1 rounded-full text-xs font-semibold bg-red-100 text-red-700">Estourado</span>
                     @else
                         <span class="text-gray-400 text-xs">OK</span>
                     @endif

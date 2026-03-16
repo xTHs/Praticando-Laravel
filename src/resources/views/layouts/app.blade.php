@@ -9,7 +9,7 @@
 <body class="bg-gray-100 min-h-screen">
 
     <nav class="bg-gray-900 text-white px-6 py-4 flex items-center gap-6">
-        <span class="font-bold text-lg tracking-wide">🎫 Chamados</span>
+        <span class="font-bold text-lg tracking-wide">Chamados</span>
         <a href="{{ route('chamados.index') }}" class="hover:text-blue-400 transition">Chamados</a>
         <a href="{{ route('tecnicos.index') }}" class="hover:text-blue-400 transition">Técnicos</a>
         <a href="{{ route('categorias.index') }}" class="hover:text-blue-400 transition">Categorias</a>

@@ -78,8 +78,8 @@
         </div>
 
         @if($chamado->isSlaEstourado())
-        <div class="bg-red-50 border border-red-300 text-red-700 px-4 py-3 rounded flex items-center gap-2">
-            ⚠ SLA estourado! Prazo era de {{ $chamado->categoria->sla_horas }}h após a abertura.
+        <div class="bg-red-50 border border-red-300 text-red-700 px-4 py-3 rounded">
+            SLA estourado! Prazo era de {{ $chamado->categoria->sla_horas }}h após a abertura.
         </div>
         @endif
     </div>
